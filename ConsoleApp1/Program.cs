@@ -13,7 +13,8 @@ namespace ConsoleApp1
             List<Book> books = new List<Book>
             {
                 new Book("123", "C# Basics", new string[] { "Alaa", "Mohamed" }, new DateTime(2020, 1, 1), 150),
-                new Book("456", "Advanced C#", new string[] { "Ahmed" }, new DateTime(2021, 6, 10), 200)
+                new Book("436", "Advanced C#", new string[] { "Ahmed" }, new DateTime(2021, 6, 10), 200),
+                new Book("416", "DataBase", new string[] { "Ali" }, new DateTime(2011, 2, 10), 300)
             };
             BookFunctionPointer GetTitle = BookFunctions.GetTitle;
             LibraryEngine.ProcessBooks(books, GetTitle);
