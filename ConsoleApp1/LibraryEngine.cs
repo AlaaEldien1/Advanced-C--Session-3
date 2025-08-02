@@ -8,16 +8,7 @@ namespace ConsoleApp1
 {
     public class LibraryEngine
     {
-        public static void ProcessBooks(List<Book> Lbooks, BookFunctionPointer fptr)
-        {
-            foreach (Book book in Lbooks)
-            {
-
-                Console.WriteLine(fptr(book));
-
-            }
-        }
-        //public static void ProcessBooks(List<Book> Lbooks, Func<Book, string> fptr)
+        //public static void ProcessBooks(List<Book> Lbooks, BookFunctionPointer fptr)
         //{
         //    foreach (Book book in Lbooks)
         //    {
@@ -26,6 +17,15 @@ namespace ConsoleApp1
 
         //    }
         //}
+        public static void ProcessBooks(List<Book> Lbooks, Func<Book, string> fptr)
+        {
+            foreach (Book book in Lbooks)
+            {
+
+                Console.WriteLine(fptr(book));
+
+            }
+        }
     }
 }
        
